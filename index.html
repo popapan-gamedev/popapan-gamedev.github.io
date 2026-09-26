@@ -1,15 +1,51 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="styles.css"/>
-  </head>
-  <body>
-    <header>
-        Popapan | Graduate Games Programmer
-    </header>
-    This is a simple sentence for testing the HTML display and text layout.
-    <p>
-      This is a simple sentence for testing the HTML display and text layout.
-    </p>
-  </body>
+
+<head>
+    <style>
+        :root {
+            --header-padding: 30px;
+        }
+        body {
+            margin: 0px;
+            font-family: Arial;
+            color: #ffffff;
+            background-color: #2e314d;
+        }
+        #top {
+            padding: var(--header-padding);
+            font-size: var(--header-padding);
+            background-color: #10111A;
+            font-weight: bold;
+        }
+        #header-bar {
+            padding: 0px 50px;
+        }
+        #header-tab {
+            right: 0px;
+            top: 0px;
+            padding: var(--header-padding);
+            position: absolute;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <div id="header-bar">
+            Popapan | Graduate Games Programmer
+        </div>
+        <div id="header-tab">
+            Projects | Blogs | About | Contact
+        </div>
+    </div>
+    
+    <div>
+        
+    </div>
+    
+</body>
+
 </html>
