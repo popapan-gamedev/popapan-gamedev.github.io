@@ -14,7 +14,7 @@ body {
   padding: 1%;
 }
 
-@media(max-width: 576px) {
+@media(max-width: 700px) {
   .header-links {
     display: none;
   }
