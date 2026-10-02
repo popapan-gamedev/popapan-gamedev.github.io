@@ -70,13 +70,12 @@ body {
   list-style: none;
 }
 
+.contacts ul li a {
+  color: #0087D1;
+}
+
 .footer {
   padding: 2%;
   font-size: 12px;
   font-weight: bold;
-}
-
-.footer ul li a:link {
-  color: #FFFFFF;
-  text-decoration: none;
 }
