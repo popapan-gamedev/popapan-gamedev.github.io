@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
+    
+    <title>Popapan Game Dev Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popapan — Game Dev Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <section class="header">
-      <div class="container">
-        <h1>Popapan</h1>
-        <p>Game Developer Portfolio</p>
-      </div>
-      <nav class="header-links">
-        <ul>
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">PROJECTS</a></li>
-          <li><a href="">BLOGS</a></li>
-          <li><a href="">CONTACTS</a></li>
-        </ul>
-      </nav>
-    </section>
-    <section class="about">
-      <div class="container">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">]
+    
+</head>
+
+<body>
+    <header id="site-header" class="box-dark">
+        <div id="header-intro">
+            <h1>Popapan</h1>
+            <p>Game Developer Portfolio</p>
+        </div>
+        <nav id="header-links">
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="">PROJECTS</a></li>
+                <li><a href="">BLOGS</a></li>
+                <li><a href="">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about" class="box-light stressed-text">
         <h1>About</h1>
-        <p>Welcome to my little section of the internet!
-          I'm Vince, or as I'd like to be known in the online space, Popapan.
-          I'm a graduate games programmer and aspiring game developer with a particular interest in [placeholder].</p>
-        <p>Some of my favourite games include Rain World, Darkest Dungeon, Titanfall 2, and Sekiro.
-          I also enjoy playing, writing, and designing all things D&D.</p>
-      </div>
+        <div id="about-passage">
+            <p>
+                Welcome to my little section of the internet!
+                I'm Vince, or as I'd like to be known in the online space, Popapan.
+                I'm a graduate games programmer and aspiring game developer
+                with a particular interest in gameplay systems and narrative design.
+            </p>
+            <p>
+                Some of my favourite games include Rain World, Darkest Dungeon, Titanfall 2, and Sekiro.
+                I also enjoy playing, writing, and designing all things D&D.
+            </p>
+        </div>
+        <div>
+            <h1>Links</h1>
+            <p>Github • <a href="https://github.com/popapan-gamedev">github.com/popapan-gamedev</a></p>
+        </div>
     </section>
-    <section class="contacts">
-      <div class="container">
-        <h1>Contacts</h1>
-        <ul>
-          <li>Phone Number: +44 (0)700 500000</li>
-          <li>Email: firstname.lastname@gmail.com</li>
-          <li>Github:
-            <a href="https://github.com/popapan-gamedev/">
-              github.com/popapan-gamedev
-            </a>
-          </li>
-        </ul>
-      </div>
+    <section id="contacts" class="box-dark stressed-text">
+        <div>
+            <h1>Contacts</h1>
+            <ul id="contacts-list">
+                <li>Phone • +44 (0)7000 500000</li>
+                <il>Email • firstname.lastname@gmail.com</li>
+            </ul>
+        </div>
     </section>
-    <section class="footer">
-      <div class="container">
-        <p>This site was made with Vanilla JS*</p>
-        <p>Last updated: 02/10/2026</p>
-      </div>
-    </section>
-  </body>
+</body>
+
 </html>
