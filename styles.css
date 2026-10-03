@@ -1,81 +1,107 @@
-* {
-  margin: 0%;
-  padding: 0%;
-}
-
 body {
-  background-color: #1E2642;
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 0;
+  background-color: #A1AAD0;
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
   color: #FFFFFF;
 }
 
-.container {
-  padding: 1%;
+h1, p {
+  margin: 0;
 }
 
-@media(max-width: 900px) {
-  .header-links {
-    display: none;
-  }
+.box-dark {
+  padding: 25px;
+  background-color: #364D87;
+  color: #FFFFFF;
 }
 
-.header {
+.box-light {
+  padding: 25px;
+  background-color: #A1AAD0;
+  color: #121A2E;
+}
+
+.box-light p {
+  padding: 15px 0px;
+}
+
+.stressed-text {
+  font-weight: bold;
+}
+
+#site-header {
   display: flex;
   align-items: center;
   font-weight: bold;
-  padding: 2%;
+}  
+
+#header-intro {
+  margin-left: 100px;
 }
-.header-links {
+
+#header-links {
   flex: 1;
   text-align: right;
 }
-.header-links ul li {
-  position: relative;
+
+#header-links ul li {
   display: inline-block;
-  padding: 1% 2%;
+  padding: 5px 15px;
   list-style: none;
 }
-.header-links ul li a {
+
+#header-links ul li a {
   color: #FFFFFF;
   text-decoration: none;
 }
-.header-links ul li::after {
+
+#header-links ul li a:after {
   content: '';
-  width: 0%;
-  height: 2px;
-  background: #f44336;
   display: block;
   margin: auto;
-  transition: 0.5s;
+  width: 0;
+  height: 2px;
+  background: #d4a7aa;
+  transition: 0.4s;
+  transition-timing-function: cubic-bezier(.28,.11,0,1)
 }
-.header-links ul li:hover::after {
+
+#header-links ul li a:hover::after {
   width: 100%;
 }
 
-.about {
-  margin: 1%;
-  padding: 3%;
-  background-color: #848FA2;
-  color: #07090F;
-  font-weight: bold;
+#about {
+  padding: 100px 100px;
 }
 
-.contacts {
-  margin: 1%;
-  padding: 3%;
-  font-weight: bold;
+#about-passage {
+      margin-right: 35%;
 }
-.contacts ul {
+
+#contacts-list {
   list-style: none;
 }
 
-.contacts ul li a {
-  color: #0087D1;
-}
+@media(max-width: 800px) {
+  #site-header {
+      display: block;
+  }
 
-.footer {
-  padding: 2%;
-  font-size: 12px;
-  font-weight: bold;
+  #header-links {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background-color: #886318;
+  }
+  #header-links ul {
+      padding: 0;
+  }
+  
+  #about-passage {
+      margin-right: 0;
+  }
 }
